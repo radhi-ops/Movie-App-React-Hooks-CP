@@ -18,9 +18,11 @@ const Card1 = props => {
   return (
     <Col xl={3} style={{ margin: "2%" }}>
       <Card>
+      <Card.Img variant="top" widht="200px" height="250px" src={props.data.poster} />
         <Card.Body>
           <Card.Title>Title : {props.data.title}</Card.Title>
           <Card.Text>Rating : {converttostar()} </Card.Text>
+          <Card.Text>Year : {props.data.year}</Card.Text>
         </Card.Body>
       </Card>
     </Col>
